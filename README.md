@@ -37,13 +37,19 @@ Welcome to my **Stylish Web Application** project, deployed on **Amazon EC2** wi
 2. **Set Up Your Environment**
 
     1- Install Apache and PHP on your EC2 instance.
+   
     2- Configure MariaDB in your private subnet and create a database named webapp_db.
+   
     3- Update login.php and profile.php with your database credentials and private IP address.
    
-3. **Deploy**
+   
+4. **Deploy**
 
     1- Place the PHP files in your web server’s root directory.
+   
     2- Ensure your EC2 instance is running and accessible via the public IP.
+
+   
 📸 Screenshots
 
 Login Page:
