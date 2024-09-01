@@ -19,7 +19,7 @@ Welcome to my **Stylish Web Application** project, deployed on **Amazon EC2** wi
 - **Public Subnet**: The web server (Apache) resides in a public subnet, making it accessible via the internet.
 - **Private Subnet**: The MariaDB database server is securely isolated within a private subnet, inaccessible directly from the internet for enhanced security.
 - **Security Groups**: Configured to control inbound and outbound traffic, allowing only necessary access (e.g., HTTP/HTTPS for the web server, and MySQL for the database server).
-- **Elastic IP**: Assigned to the EC2 instance in the public subnet, ensuring it has a fixed public IP address for consistent access.
+- **Elastic IP**: Assigned to the EC2 instance in the private subnet, ensuring it has a fixed public IP address for downloading needed packages.
 
 ### **Application Stack**
 - **Apache**: Web server to host and serve the PHP application.
