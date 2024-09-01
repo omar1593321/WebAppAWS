@@ -15,6 +15,21 @@ Welcome to my **Stylish Web Application** project, deployed on **Amazon EC2** wi
 - **Amazon EC2**: The web application is deployed on a highly reliable EC2 instance.
 - **Amazon VPC**: The project is hosted within a Virtual Private Cloud (VPC) to ensure secure and isolated network architecture.
 
+#### **Step-by-Step VPC and Network Setup**
+
+1. **Create a VPC**: Start by creating a Virtual Private Cloud (VPC) to host your network resources. This VPC will be the isolated environment where your EC2 instances will reside.
+   
+2. **Create Two Subnets**:
+   - **Public Subnet**: Create a subnet named `public` with a public IP address. This subnet will host your web server, making it accessible from the internet.
+   - **Private Subnet**: Create another subnet named `private` without a public IP address. This subnet will host your database server, keeping it isolated from direct internet access.
+   
+3. **Set Up Route Tables**:
+   - **Public Route Table**: Create a route table named `public` and associate it with the `public` subnet. This route table will direct traffic to and from the internet.
+   - **Private Route Table**: Similarly, create a route table named `private` and associate it with the `private` subnet. This table will route internal traffic within the VPC.
+
+4. **Attach an Internet Gateway**:
+   - Attach an Internet Gateway to your VPC and associate it with the `public` subnet’s route table. This setup allows resources in the public subnet to communicate with the internet.
+
 ### **Network Configuration**
 - **Public Subnet**: The web server (Apache) resides in a public subnet, making it accessible via the internet.
 - **Private Subnet**: The MariaDB database server is securely isolated within a private subnet, inaccessible directly from the internet for enhanced security.
