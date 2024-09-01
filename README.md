@@ -5,7 +5,7 @@ Welcome to my **Stylish Web Application** project, deployed on **Amazon EC2** wi
 
 ## 🛠️ Features
 - **✨ Modern UI/UX**: A clean and visually appealing interface designed with the user in mind.
-- **🎨 Stylish Design**: Custom CSS for a polished look, including a stunning background wallpaper.
+- **🎨 Stylish Design**: Custom CSS for a polished look.
 - **🔒 Secure Authentication**: User authentication leveraging PHP and MariaDB.
 - **👤 User Profile**: Displays user details in a well-organized and stylish manner.
 
